@@ -1,0 +1,380 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: rgb(196, 181, 160);;
+  background: rgb(10, 6, 0);;
+}
+nav{
+  position: relative ;
+  background: black;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #050505;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: white;
+}
+.menu ul li a:hover{
+    top: 20px;
+    bottom: 100px; ;
+  background: #fffdfa;
+  color: black;
+}
+.card-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 20em;
+    margin-top: 5em;
+  }
+  .card-container1 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 50em;
+    margin-top: -19em;
+  }
+  
+  .card-container1::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  .card-container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  
+  .card .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+  }
+  
+  .card .img-content svg {
+    width: 50px;
+    height: 50px;
+    fill: #e8e8e8;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card:hover .img-content {
+    scale: 2.5;
+    rotate: 30deg;
+    filter: blur(7px);
+  }
+  
+  .card:hover .img-content svg {
+    fill: transparent;
+  }
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oxanium;
+}
+body{
+  background-color: black;
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  
+  margin-right: 50px;
+
+  
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.main{
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    color: white;
+  
+}
+.des{
+    margin-top: 80px;
+    position: absolute;
+    padding: 100px 100px 100px 100px;
+    background-color: #c7faa2;
+}
+.det{
+    position: relative;
+    text-align: center;
+    margin-top: 550px;
+    color: white;
+}
+.sal,#c1{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: white;
+}
+.com{
+    position: absolute;
+    text-align: left;
+    left: 10%;
+    right: 20%;
+    margin-top: 33px;
+    margin-left: 400px;
+    color: #fff;
+}
+   
+.com ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    color: white;
+}
+#side{
+    margin-top: 300px;
+    position: absolute;
+    padding: 100px 100px 500px 100px;
+    background-color: #c7faa2;
+    margin-left: 100px;
+    font-size: 35px;
+}
+.sub{
+    position: relative;
+    margin-top: 400px;
+    margin-left: 650px;
+    color: white;
+
+}
+.sub2{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 650px;
+    color: white;
+
+}
+button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  left: 32em;
+  top: 6em;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #c7faa2, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid #c7faa2;
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #c7faa2, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid #c7faa2;
+  box-shadow: 0px 10px 10px -10px #c7faa2;
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+button a{
+  text-decoration: none;
+  color: white;
+}

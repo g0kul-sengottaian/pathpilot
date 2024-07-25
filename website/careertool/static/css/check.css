@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oxanium;
+  
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  
+  margin-right: 50px;
+
+  
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+body{
+  background-color: black;
+}
+.center{
+  position: relative;
+  top: 15em; 
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+
+}
+.Ques{
+    position: relative;    
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 16px;
+}
+
+select{
+  margin-top: 10%;
+  border:none;
+  padding: 10px 30px;
+  border-radius:5px;
+  background-color: #c7faa2;
+}
+
+select:focus{
+  outline:none;
+  transform: scale(1.1,1.1);
+}
+
+.wrapper{
+  position: fixed;
+  top: 80%;
+  left: 42%;
+  
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: fixed;
+}
+
+.next{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: rgb(150, 130, 101);
+  transition: all .35s;
+}
+
+.next:hover{
+  width: 200px;
+  border: 3px solid rgb(150, 130, 101);
+  background: transparent;
+  color: rgb(150, 130, 101);
+}
+
+.next:hover + .icon{
+  border: 3px solid #000000;
+  right: -25%;
+}
+
+footer{
+  font-size: 30px;
+  color: #050505;
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 24em;
+
+}

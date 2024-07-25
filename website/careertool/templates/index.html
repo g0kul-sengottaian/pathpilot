@@ -1,0 +1,232 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>PathPilot</title>
+</head>
+<body>
+    <div class="main"style="background:black; height: 755px; width: 1518px;" id="home">
+       
+        <nav>
+            <h1 style="color: #fff; margin-left: 150px; margin-top: 0em;"><span style="color: #c7faa2;">P</span>athPilot</h1>
+            <ul >
+               <!--- <li><a href="#home">HOME</a></li>-->
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+                <li><a href="{% url 'roles' %}">ROLES</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}">LOGIN</a></li>
+                {% endif %}
+
+            </ul>
+          </nav> 
+          <div class="header" >
+            <h1 style="color: #c7faa2; position:absolute;margin-left: 15em; margin-top: -2em; ">DISCOVER YOUR PATH TO <span></span></h1>
+            <h2 style="color: white; margin-left: 46em; margin-top: 2em; font-size: small;">Unlock your potential with PathPilot</h2>
+            <h1 style="color: white;">TRENDING JOB ROLES</h1>
+            {% if a == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if a == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if a == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if a == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if a == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if a == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if a == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if a == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if b == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if b == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if b == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if b == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if b == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if b == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if b == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if b == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if c == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if c == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if c == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if c == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if c == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if c == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if c == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if c == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if d == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if d == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if d == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if d == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if d == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if d == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if d == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if d == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+            {% if e == 0 %}
+            <h3 style="color: white;">Database Administrator</h1>
+            {% endif %}
+            {% if e == 1 %}
+            <h3 style="color: white;">Software Development Engineer</h1>
+            {% endif %}
+            {% if e == 2 %}
+            <h3 style="color: white;">Cyber Security Engineer</h1>
+            {% endif %}
+            {% if e == 3 %}
+            <h3 style="color: white;">Network Consultant</h1>
+            {% endif %}
+            {% if e == 4 %}
+            <h3 style="color: white;">Software Developer-Front end</h1>
+            {% endif %}
+            {% if e == 5 %}
+            <h3 style="color: white;">Machine Learning Engineer</h1>
+            {% endif %}
+            {% if e == 6 %}
+            <h3 style="color: white;">Data Science Managerr</h1>
+            {% endif %}
+            {% if e == 7 %}
+            <h3 style="color: white;">Graphic Designer and Content Writer</h1>
+            {% endif %}
+
+            <button  onclick="myFunction()" style="position: absolute;margin-left: -9em;margin-top: 17em;">
+                TAKE TEST
+            </button>
+            <button onclick="func()" style="position: absolute; margin-left: 11em; margin-top: 17em;">
+                    AI
+            </button>
+            <h2 style="color: white; margin-left: 45em; margin-top: 13em; font-size: small;">Want to explore the available  roles? <a href="{% url 'roles' %}" style="text-decoration: none; color: white;">Check out!</a></h2>
+          </div>
+       
+    </div>
+    <div id="about" class="two" style="background: #c7faa2; height: 600px; width: 1518px;">
+        <img src="{% static 'img/next.jpg'%}" height=400px width=600px>
+        <div class="two right">
+            <h1>What we Do?</h1>
+            <p>We navigate you to the world of career choices and professional growth.
+                We believe that everyone deserves a fulling and successful career.We unveil your perfect career path .</p>
+        </div>
+    </div>
+    <div class="three" style="background: #fff; height: 550px; width: 1518px;">
+        <img src="{% static 'img/three.jpg'%}" height=400px width=600px>
+        <div class="two left">
+            <h1>How we did it?</h1>
+            <p>We provide access to a wealth of information about various industries,job roles
+                and career trajectories.Our insights are designed to help you to explore the world of career and
+              understand the demands and oppurtunities in different fields</p>
+        </div>
+    </div>
+    <div style="background: #c7faa2; height: 386px; width: 1518px;">
+        <img src="{% static 'img/four.jpg'%}" width="1518px">
+    </div>
+    <div class="five" style="background: white; height: 500px; width: 1518px;">
+        
+<div id="feedback" class="form-container" style="margin-top: 10em;">
+    <form class="form">
+      <div class="form-group">
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="textarea">Thoughts . . </label>
+        <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+      </div>
+      <button class="form-submit-btn" type="submit" style="margin-left: -25em; margin-top: -2em;">Submit</button>
+    </form>
+</div>
+<div class="fb"><h1>Let us know . . .</h1></div>
+    </div>
+   
+    <div class="last" style="background: #eceff3ff; height: 150px; width: 1518px;">
+        <div class="pp"><a href="#main">PathPilot</a></div>
+        <div class="links">
+            <a href="#"><i class="fab fa-instagram" style="color: rgb(0, 0, 0);" ></i></a>
+            <a href="#"><i class="fab fa-twitter" style="color: rgb(0, 0, 0);"></i></a>
+            <a href="#"><i class="fab fa-github" style="color: rgb(0, 0, 0);"></i></a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            location.replace("{% url 'filter'%}")
+          }   
+        function func(){
+            location.replace("{% url 'receive-history-data'%}")
+        }  
+          document.getElementById("openExtensionButton").addEventListener("click", function() {
+        // Send a message to the extension to open the popup
+        chrome.runtime.sendMessage(
+            // Replace 'your_extension_id' with your extension's ID
+            'haecbgcfaogfjmfbbmbnodnongkjpnme',
+            { message: "OpenExtensionPopup" },
+            function(response) {
+                console.log("Received response from extension:", response);
+            }
+        );
+    });
+
+
+    </script>
+</body>
+</html>

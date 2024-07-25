@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Oxanium;
+  
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+
+  
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.title{
+margin-top: 4em;
+color: #fff;
+}
+.center a{
+  text-decoration: none;
+  color: black;
+}
+.center{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.role1{
+    position: relative;
+    top: 60%;
+    bottom: 100%;
+    text-align: center;
+    background-color: #c7faa2;
+    padding: 100px 50px 50px 110px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  color: rgb(10, 0, 0);
+  font-size: 16px;
+  border-radius: 25px;
+  
+  
+}
+.role1:hover{
+  transform: scale(1.1,1.1);
+}
+.role2:hover{
+  transform: scale(1.1,1.1);
+}
+.role3:hover{
+  transform: scale(1.1,1.1);
+}
+
+.role2{
+    position: relative;
+    top: 60%;
+    text-align: center;
+    background-color: #c7faa2;
+    padding: 110px 50px 50px 110px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  color: rgb(10, 0, 0);
+  font-size: 16px;
+  border-radius: 25px;
+  
+  
+}
+.role3{
+    position: relative;
+    top: 60%;
+    text-align: center;
+    background-color: #c7faa2;
+    padding: 110px 50px 50px 110px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  color: rgb(10, 0, 0);
+  font-size: 16px;
+  border-radius: 25px;
+}
+  
+.btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: black;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+.links{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}

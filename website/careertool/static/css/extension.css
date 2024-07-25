@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium');
+*{
+  font-family: Oxanium;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #050505;
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+
+  
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c7faa2;
+  position:absolute;
+  left: 0;
+  bottom: -6px ;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.arrow{
+  position: absolute;
+  margin-top: -90px;
+  margin-left: 1300px;
+  
+}
+.message{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 800px;
+  color: #e8e1e1;
+
+}
+.button{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -50px;
+}
+.center{
+  position: fixed;
+  margin-top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+
+}
+.Ques{
+    position: relative;    
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 16px;
+}
+
+select{
+  margin-top: 10%;
+  border:none;
+  padding: 10px 30px;
+  border-radius:5px;
+  width: 20em;
+  background-color: #c7faa2;
+}
+
+select:focus{
+  transform: scale(1.1,1.1);
+
+}
+.button {
+  --color: #fff;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  left: 42em;
+  top: 25em;
+ }
+ 
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button:hover {
+  color: black;
+ }
+ 
+ .button:active {
+  filter: brightness(.8);
+ }
+ 
+
+footer{
+  font-size: 30px;
+  color: #050505;
+  position: absolute;
+  margin-top: 17em;
+  margin-bottom: 100px;
+  margin-left: 24em;
+  
+}
+footer i{
+  color: white;
+}
